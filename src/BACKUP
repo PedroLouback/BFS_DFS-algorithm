@@ -1,0 +1,68 @@
+if(j == 0 && i < tam-1){
+			if(matriz[i+1][j] == 0){
+				i++;
+				aux.x = i;
+				aux.y = j;
+				PUSH(&p, aux);
+			}else{
+				if(matriz[i][j+1] == 0){
+					j++;
+					aux.x = i;
+					aux.y = j;
+					PUSH(&p, aux);
+				}else{
+                    matriz[i][j]=2;
+					i--;
+					aux.x = i;
+					aux.y = j;
+					POP(&p, &aux);
+				}
+        	}
+		}
+		if(i == 0 && j != 0){
+			if(matriz[i + 1][j] == 0){
+				i++;
+				aux.x = i;
+				aux.y = j;
+				PUSH(&p, aux);
+			}else {
+				if(matriz[i][j + 1] == 0){
+					j++;
+					aux.x = i;
+					aux.y = j;
+					PUSH(&p, aux);
+				}else if(matriz[i][j - 1] == 0){
+					j--;
+					aux.x = i;
+					aux.y = j;
+					PUSH(&p, aux);
+				}else{
+                    matriz[i][j]=2;
+					i--;
+					aux.x = i;
+					aux.y = j;
+					POP(&p, &aux);
+                }
+			}
+		}
+		if(i == tam-1){
+			if(matriz[i][j + 1] == 0){
+				j++;
+				aux.x = i;
+				aux.y = j;
+				PUSH(&p, aux);
+			}else{
+				if(matriz[i - 1][j] == 0){
+					i--;
+					aux.x = i;
+					aux.y = j;
+					PUSH(&p, aux);
+				}else{
+                    matriz[i][j]=2;
+					i--;
+					aux.x = i;
+					aux.y = j;
+					POP(&p, &aux);
+                }
+			}
+		}
