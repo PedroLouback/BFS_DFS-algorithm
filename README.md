@@ -14,7 +14,8 @@
  <a href="#representação-gráfica-dos-algoritmos-de-busca">Representação gráfica dos algoritmos de busca</a> •
  <a href="#lógica">Lógica</a> • 
  <a href="#representação-gráfica">Representação gráfica</a> • 
- <a href="#perguntas">Compilaçã</a> • 
+ <a href="#perguntas">Perguntas</a> • 
+ <a href="#bibliotecas">Bibliotecas</a> •
  <a href="#compilação-e-execução">Compilação e Execução</a> • 
  <a href="#autores">Autores</a>
 </p>
@@ -113,6 +114,17 @@ Segue a representação gráfica de um exemplo ilustrado dos dois diferentes alg
 
 <i>1</i> - Sim, diferentes tamanhos de matrizes e posicionamentos de paredes irão influenciar diretamente em qual dos métodos terá uma reposta mais eficiente. Para matrizes onde o número de paredes é consideravelmente alto ou as paredes se encontram em posições as quais formam uma espécie de caminho sem volta, o BFS retornará o resultado com um tempo de execução menor. Caso contrário, para matrizes onde o número de paredes é baixo, o DFS possui melhor performance, uma vez que a probabilidade de ficar preso em um corredor é mais baixa quando há poucas paredes, por consequência, DFS dará menos passos e retornará mais rápido que o BFS.<br/>
 <i>2</i>- O DFS busca o caminho dando preferência ao comando inicial (DESCER ou IR PARA DIREITA), isso implica que, suas decisões são tomadas apenas observando o próximo passo, não é levado em consideração que,  se o algoritmo optar por descer agora ao em vês de virar a direita, ele ficará sem mais para onde ir. Isso é uma característica de uma família de algoritmos chamados de Algorítmos gulosos. Então não, os algorítmos aqui apresentdos não possuem capacidade de encontrar o menor caminho até o seu destino.
+
+---
+
+## Bibliotecas
+
+<p>Para o funcionamento do programa, é necessário incluir as seguintes bibliotecas: 
+<ul>
+    <li><code>#include 'stdlib.h'</code></li>
+    <li><code>#include 'stdio.h'</code></li>
+    <li><code>#include 'stdbool.h'</code></li>
+</ul>
 
 ---
 
