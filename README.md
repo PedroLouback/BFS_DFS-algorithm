@@ -92,6 +92,8 @@ Exemplo de saída do algoritmo `BFS` implementado pela dupla:
 ## Representação gráfica
 
 Segue a representação gráfica de um exemplo ilustrado dos dois diferentes algoritmos de busca e suas respectivas legendas aplicadas ao exemplo de matriz fornecidos pelo professor:
+ 
+ • *Os número que estão dentro de cada celula representam respectivamente a posição do **i** e a posição do **j**, para que não haja confusão, onde ache que seja um valor*
 
 <p align="center" alt="Representação caminho percorrido.">
 <img src="imgs/Caminhos_bloqueados.png" width="500px"/><br/>
