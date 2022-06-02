@@ -78,6 +78,7 @@ void BFS(int **matriz, int tam)
 				aux.x = i + 1;
 				aux.y = j;
 				Enfileira(&f, aux);
+				matriz[aux.x][aux.y] = 1;
 				count_caminho++;
 			}
 			if (matriz[i][j + 1] == 0)
@@ -85,12 +86,11 @@ void BFS(int **matriz, int tam)
 				aux.x = i;
 				aux.y = j + 1;
 				Enfileira(&f, aux);
+				matriz[aux.x][aux.y] = 1;
 				count_caminho++;
 			}
 			if (matriz[i][j] != 1)
 			{
-				aux.x = i;
-				aux.y = j;
 				Desenfileira(&f, &aux);
 			}
 
@@ -103,6 +103,7 @@ void BFS(int **matriz, int tam)
 				aux.x = i + 1;
 				aux.y = j;
 				Enfileira(&f, aux);
+				matriz[aux.x][aux.y] = 1;
 				count_caminho++;
 			}
 			if (matriz[i][j + 1] == 0)
@@ -110,12 +111,11 @@ void BFS(int **matriz, int tam)
 				aux.x = i;
 				aux.y = j + 1;
 				Enfileira(&f, aux);
+				matriz[aux.x][aux.y] = 1;
 				count_caminho++;
 			}
 			if (matriz[i][j] != 1)
 			{
-				aux.x = i;
-				aux.y = j;
 				Desenfileira(&f, &aux);
 			}
 			count = 0;
@@ -133,12 +133,11 @@ void BFS(int **matriz, int tam)
 					aux.x = aux_i;
 					aux.y = aux_j + 1;
 					Enfileira(&f, aux);
+					matriz[aux.x][aux.y] = 1;
 					count_caminho++;
 				}
 				if (matriz[i][j] != 1)
 				{
-					aux.x = i;
-					aux.y = j;
 					Desenfileira(&f, &aux);
 				}
 				count++;
@@ -154,12 +153,11 @@ void BFS(int **matriz, int tam)
 				aux.x = i;
 				aux.y = j + 1;
 				Enfileira(&f, aux);
+				matriz[aux.x][aux.y] = 1;
 				count_caminho++;
 			}
 			if (matriz[i][j] != 1)
 			{
-				aux.x = i;
-				aux.y = j;
 				Desenfileira(&f, &aux);
 			}
 			count = 0;
@@ -177,12 +175,11 @@ void BFS(int **matriz, int tam)
 					aux.x = aux_i;
 					aux.y = aux_j + 1;
 					Enfileira(&f, aux);
+					matriz[aux.x][aux.y] = 1;
 					count_caminho++;
 				}
 				if (matriz[i][j] != 1)
 				{
-					aux.x = i;
-					aux.y = j;
 					Desenfileira(&f, &aux);
 				}
 				count++;
@@ -196,12 +193,11 @@ void BFS(int **matriz, int tam)
 				aux.x = i;
 				aux.y = j + 1;
 				Enfileira(&f, aux);
+				matriz[aux.x][aux.y] = 1;
 				count_caminho++;
 			}
 			if (matriz[i][j] != 1)
 			{
-				aux.x = i;
-				aux.y = j;
 				Desenfileira(&f, &aux);
 			}
 			count_caminho++;
